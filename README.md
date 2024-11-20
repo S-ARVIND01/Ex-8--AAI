@@ -33,11 +33,11 @@ Perform speech recognition with exceptional handling:<Br>
 •	A generic exception block captures any other unexpected errors.<Br>
 
 ## PROGRAM:
-```
+```python
 import speech_recognition as sr
 r = sr.Recognizer()
 duration = 30
-print("Say something")
+print("Start Speaking")
 with sr.Microphone() as source:
     audio_data = r.listen(source,timeout=duration)
 
